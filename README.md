@@ -12,6 +12,19 @@
     },
 ```
 
+## Call from code
+```php
+
+class my_project_theme extends bors_themes_bootstrap3
+{
+	function pre_show()
+	{
+		B2\Font\Scada::load();
+		return parent::pre_show();
+	}
+}
+```
+
 ## Links
 
 * http://www.scada.lv/company/scada-font
