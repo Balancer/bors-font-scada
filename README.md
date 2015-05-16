@@ -1,8 +1,16 @@
-# Font Scada local storage module
+# Scada v1.1 font assets for local storage usage with BORS©v2 framework
 
 ## Install
 
     composer require bors/font-scada=dev-master
+
+## Usage with composer.json
+
+```json
+    "require": {
+        "bors/font-scada": "@dev"
+    },
+```
 
 ## Links
 
