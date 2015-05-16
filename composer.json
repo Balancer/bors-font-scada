@@ -11,10 +11,8 @@
 	],
 
 	"require": {
-		"libra/libra-assets-installer": "*"
+		"reputation-vip/composer-assets-installer": "*"
 	},
-
-	"type": "asset-aware",
 
 	"autoload": {
 		"psr-4": {
@@ -22,7 +20,7 @@
 		}
 	},
 
-	"config": {
-		"public-dir": "htdocs/_bors-assets"
-	}
+	 "extra": {
+		 "assets-dir" : "public"
+	 }
 }
