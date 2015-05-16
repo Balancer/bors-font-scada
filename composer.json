@@ -25,10 +25,10 @@
 	"extra": {
 		"component": {
 			"scripts": [
-				"public/js/scada-local-storage-pre.js"
+				"js/scada-local-storage-pre.js"
 			],
 			"styles": [
-				"public/css/scada-embed.woff.css"
+				"css/scada-embed.woff.css"
 			]
 		}
 	}
