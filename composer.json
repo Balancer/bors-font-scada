@@ -10,8 +10,10 @@
 		}
 	],
 
+	"type": "component",
+
 	"require": {
-		"reputation-vip/composer-assets-installer": "*"
+		"robloach/component-installer": "*"
 	},
 
 	"autoload": {
@@ -20,7 +22,14 @@
 		}
 	},
 
-	 "extra": {
-		 "assets-dir" : "public"
-	 }
+	"extra": {
+		"component": {
+			"scripts": [
+				"public/js/scada-local-storage-pre.js"
+			],
+			"styles": [
+				"public/css/scada-embed.woff.css"
+			]
+		}
+	}
 }
