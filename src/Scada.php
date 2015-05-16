@@ -4,7 +4,7 @@ namespace B2\Font;
 
 class Scada
 {
-	static function baseUrl() { return '/_bors-assets/bors/font-scada'; }
+	static function baseUrl() { return '/_bors-assets/font-scada'; }
 
 	static function load()
 	{
