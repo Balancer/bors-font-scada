@@ -1,0 +1,28 @@
+{
+	"name": "bors/font-scada",
+	"description": "Scada font assets for local storage usage",
+	"license": "Open Font License (OFL)",
+
+	"authors": [
+		{
+			"name": "Balancer",
+			"email": "balancer@balancer.ru"
+		}
+	],
+
+	"require": {
+		"libra/libra-assets-installer": "*"
+	},
+
+	"type": "asset-aware",
+
+	"autoload": {
+		"psr-4": {
+			"B2\\Font\\": "src/"
+		}
+	},
+
+	"config": {
+		"public-dir": "htdocs/_bors-assets"
+	}
+}
