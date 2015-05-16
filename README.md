@@ -8,3 +8,7 @@
 
 * http://www.scada.lv/company/scada-font
 * https://www.google.com/fonts/specimen/Scada
+
+## Require
+
+* http://robloach.github.io/component-installer/
