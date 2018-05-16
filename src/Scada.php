@@ -8,8 +8,6 @@ class Scada extends \B2\Composer\PackageNpmAsset
 
     static $use_jquery = true;
 
-    static function cdn_uses() { throw new \Exception("You must install `npm-asset/bors-font-scada-asset` package!"); }
-
     static function local_uses()
     {
         $asset = \B2\cfg('npm-asset.path', '/npm-asset');
