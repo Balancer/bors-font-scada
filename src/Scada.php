@@ -2,12 +2,21 @@
 
 namespace B2\Font;
 
-class Scada
+class Scada extends \B2\Composer\PackageNpmAsset
 {
-	static function baseUrl() { return '/_bors-assets/font-scada'; }
+    static $npm_package_name = 'npm-asset/bootstrap';
 
-	static function load()
-	{
-		bors_use('pre:'.self::baseUrl().'/js/scada-local-storage-pre.js');
-	}
+    static $use_jquery = true;
+
+    static function cdn_uses() { throw new \Exception("You must install `npm-asset/bors-font-scada-asset` package!"); }
+
+    static function local_uses()
+    {
+        $asset = \B2\cfg('npm-asset.path', '/npm-asset');
+
+        return [
+            $asset.'/css/scada-embed.woff.css',
+            $asset.'/js/scada-local-storage-pre.js',
+        ];
+    }
 }

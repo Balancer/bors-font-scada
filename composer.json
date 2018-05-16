@@ -4,16 +4,11 @@
 	"license": "Open Font License (OFL)",
 
 	"authors": [
-		{
-			"name": "Balancer",
-			"email": "balancer@balancer.ru"
-		}
+		{ "name": "Balancer", "email": "balancer@balancer.ru" }
 	],
 
-	"type": "component",
-
 	"require": {
-		"robloach/component-installer": "*"
+		"npm-asset/bors-font-scada-asset": "*"
 	},
 
 	"autoload": {
@@ -21,15 +16,4 @@
 			"B2\\Font\\": "src/"
 		}
 	},
-
-	"extra": {
-		"component": {
-			"scripts": [
-				"js/scada-local-storage-pre.js"
-			],
-			"styles": [
-				"css/scada-embed.woff.css"
-			]
-		}
-	}
 }
