@@ -4,7 +4,7 @@ namespace B2\Font;
 
 class Scada extends \B2\Composer\PackageNpmAsset
 {
-    static $npm_package_name = 'npm-asset/bootstrap';
+    static $npm_package_name = 'npm-asset/bors-font-scada-asset';
 
     static $use_jquery = true;
 
