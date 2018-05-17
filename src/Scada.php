@@ -6,11 +6,9 @@ class Scada extends \B2\Composer\PackageNpmAsset
 {
     static $npm_package_name = 'npm-asset/bors-font-scada-asset';
 
-    static $use_jquery = true;
-
     static function local_uses()
     {
-        $asset = \B2\cfg('npm-asset.path', '/npm-asset');
+        $asset = \B2\cfg('npm-asset.path', '/npm-asset') . '/' . basename(static::$npm_package_name);
 
         return [
             $asset.'/css/scada-embed.woff.css',
